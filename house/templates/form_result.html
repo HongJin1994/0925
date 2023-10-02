@@ -49,7 +49,7 @@
                 <tr>
                     <td>{{ (result[3] | string)[:4] }}年{{ (result[3] | string)[4:] }}月</td>
                     <td>{{ result[12] }}</td>
-                    <td>{{ result[8] }}</td>
+                    <td>{{ (result[8] ) | round(2, ) }}</td>
                     <td>{{ (result[15] | float / 10 ) | round(2, 'floor') }} 萬/坪</td>
                     <td>{{ result[4] }}房{{ result[5] }}廳{{ result[6] }}衛</td>
                     <td>{{ result[2] }}年</td>
